@@ -1,0 +1,28 @@
+# Intro
+print("=========================================")
+print("=SELAMAT DATANG DI AREA PARKIRAN STASIUN=")
+print("=========================================")
+
+# Input
+print("Silahkan Masukkan Durasi Waktu Kendaraan Anda Untuk Diparkir")
+durasi = float(input("Durasi Waktu: "))
+
+# Variabel
+kurang_dari_dua_jam = 3000
+
+# Kodingan
+# Penanganan Jika Pengguna Memasukkan Angka 0 dan Seterusnya
+if durasi <=0:
+    print("Masukkan Durasi Waktu Anda Dengan Valid!!!")
+# Jika Durasi Kurang Dari 2 Jam Atau Sama Dengan 
+if durasi <=2:
+    kurang_dari_dua_jam = 3000
+    print(f"Tarif Anda Untuk Kurang Atau Sama Dengan 2 Jam Adalah:",kurang_dari_dua_jam,"RP" )
+# Jika Durasi Lebih Dari 2 Jam
+elif durasi >2:
+    lebih_dari_dua_jam = kurang_dari_dua_jam + (1500 * durasi)
+    print(f"Tarif Anda Untuk Lebih dari 2 Jam Adalah",lebih_dari_dua_jam,"RP")
+# Jika Durasi Lebih Dari 24 Jam
+elif durasi >24:
+    lebih_dari_dua_empat_jam = kurang_dari_dua_jam + 1500 * 24 + (10000 * durasi)
+    print(f"Tarif Anda Untuk Lebih Dari 24 Jam Adalah",lebih_dari_dua_empat_jam,"RP")
