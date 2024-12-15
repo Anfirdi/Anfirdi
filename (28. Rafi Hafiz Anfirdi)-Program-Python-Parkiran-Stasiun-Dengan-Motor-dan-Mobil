@@ -1,0 +1,53 @@
+# Intro
+print("===========================================")
+print("==Selamat Datang di Area Parkiran Stasiun==")
+print("===========================================")
+print("\n")
+
+# Input
+kendaraan = str(input("Kendaraan Apa Yang Ingin Diparkir?: "))
+durasi = float(input("Masukkan Jumlah Durasi Parkir: "))
+
+# Variabelnya
+biaya_motor = 1000
+biaya_mobil = 1500
+biaya_kurang_dari = 3000
+biaya_roda_tiga = 2000
+
+# Coding
+# Penanganan Jika Pengguna Memasukkan Angka 0 dan minus
+if durasi <=0:
+    print("Masukkan Jumlah Durasi Dengan Valid!!!")
+
+# Jika Durasi Kurang atau Sama dengan 2 Jam
+if durasi <=2:
+    biaya_kurang_dari = 3000
+    print(f"Biaya Anda Adalah:",biaya_kurang_dari,"RP")
+
+# Jika Pengguna Memakirkan Kendaraan Sepeda Motor
+elif durasi >2:
+    kendaraan =="motor" or "Motor"
+    biaya_lebih_dari_dua = biaya_kurang_dari + biaya_motor 
+    total_biaya_motor = biaya_lebih_dari_dua * durasi
+    print(f"Biaya Anda Untuk Lebih Dari 2 Jam Adalah:",total_biaya_motor,"RP")
+
+# Jika Pengguna Memakirkan Kendaraan Mobil
+elif durasi >2:
+    kendaraan =="mobil" or "Mobil"
+    biaya_lebih_dari_dua = biaya_kurang_dari + biaya_mobil
+    total_biaya_mobil = biaya_lebih_dari_dua * durasi
+    print(f"Biaya Anda Untuk Lebih Dari 2 Jam Adalah:",total_biaya_mobil,"RP")
+    
+# Jika Lebih Dari 24 Jam
+elif durasi >=24:
+    biaya_lebih_dari_puluh = biaya_kurang_dari + 10000
+    total_biaya_dua_empat_jam = biaya_lebih_dari_puluh * durasi
+    print(f"Biaya Anda Untuk Lebih Dari 24 Jam Adalah", total_biaya_dua_empat_jam,"RP")
+
+
+
+    
+
+
+
+    
