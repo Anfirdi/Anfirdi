@@ -1,0 +1,28 @@
+# Intro
+print("====================================")
+print("=SELAMAT DATANG DI PENGIRIMAN PAKET=")
+print("====================================")
+
+# Input
+panjang = float(input("Masukkan Panjang Paket:"))
+lebar = float(input("Masukkan Lebar Paket:"))
+tinggi = float(input("Masukkan Tinggi Paket:"))
+kilogram = float(input("Masukkan Jumlah Kilogram:"))
+kondisi_daerah = (input("Apakah Anda Dari Kota atau Kabupaten Pasuruan (ya/no):")).lower
+
+# Variabelnya
+kg = 5000
+kg_l = 7000
+
+# Koding
+# Jika Panjang, Lebar, Tinggi Kurang dari 50cm
+if panjang and lebar and tinggi <=50:
+    kondisi_daerah == "no"
+    biayanya_kurang = kg * kilogram
+    print(f"Biaya Anda Untuk Paket Yang Berdimensi Kurang atau Sama Dari 50cm Adalah:","RP",biayanya_kurang)
+
+# Jika Panjang, Lebar, Tinggi Lebih dari 50cm
+elif panjang and lebar and tinggi >50:
+    kondisi_daerah == "no"
+    biaya_lebih = 50000 + (kg_l * kilogram)
+    print(f"Biaya Anda Untuk Paket Yang Berdimensi Lebih Dari 50cm Adalah:","RP",biaya_lebih)
